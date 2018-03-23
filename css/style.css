@@ -1,0 +1,502 @@
+@charset "utf-8";
+
+#wrap{
+    width: 100%;    
+}
+
+header, main, footer{
+    position: relative;
+    width: 100%;
+}
+
+#mainVisual{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url("../images/main.jpg") no-repeat center / cover;
+    overflow: hidden;
+}
+
+#headerIn{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comeback1{
+   position: absolute;
+   top: 38%;
+   left: 50%;
+   transform: translateX(-50%);
+   font-family: 'Arial', sans-serif;
+   color: #fff;
+   font-size: 34px;
+   font-weight: bold;
+}
+
+.comeback2{
+    position: absolute;
+    width: 326px;
+    height: 40px;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38px;
+    color: #faf7c7;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.enter{
+    position:  absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 40px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.enter a{
+    display: block;
+    width: 90px;
+    height: 36px;
+    border: 2px solid #fff;
+    text-align: center;    
+}
+
+.enter1, .enter2{
+    color: #fff;
+    display: block;
+    position: relative;
+    top: 7px;
+}
+
+.enter a:hover{
+    border: 2px solid goldenrod;
+}
+
+.enter1:hover, .enter2:hover{
+    color: goldenrod;
+}
+
+.navi, .search{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 16px;
+}
+
+.navi{
+    left: 10px;
+}
+
+.search{
+    right: 10px;
+}
+
+.navi>a .search>a{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.navi span, .search span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    /* background: #ccc; */
+}
+
+.fa-bars, .fa-search{
+    font-size: 30px;
+}
+
+.logo{
+    width: 120px;
+    height: 60px;
+}
+
+.logo>a{
+    display: block;
+    width: 120px;
+    height: 60px;
+}
+
+.logo img{
+    position: relative;
+    top: 12px;
+    left: 2px;
+}
+
+#gnb{
+    position: absolute;
+    top: 60px;
+    left: -100%;  /* 네비게이션을 왼쪽으로 숨긴다 */
+    width: 100%;
+    height: auto;
+    background: #f0f0f0;
+    display: none;
+    z-index: 99;
+}
+
+#gnb>ul>li>a{
+    position: relative;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    padding: 22px 0;
+}
+
+#gnb>ul>li>a:hover{
+    color: goldenrod;
+}
+
+/* #gnb>ul>li>a:after{
+    content:"▼";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: goldenrod;
+} */
+
+.depth2 a{
+    display: block;
+    padding: 8px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+.depth2 a:hover{
+    color: #999999;
+}
+
+.depth2{
+    display: none;
+}
+
+#SearchBar{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 50px;
+    background: #f0f0f0;
+    display: none;
+}
+
+#sch{
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    text-indent: 10px;
+    top: 5px;
+    background: rgba(255,255,255,0.8);
+    color: #ccc;
+}
+
+/* 메인css */
+
+/* #mainVisual{
+    width: 100%;
+    height: 300px;
+}
+
+#mainVisual>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+} */
+
+.artist{
+    width: 80px;
+    height: 30px;
+    margin: 50px auto;
+}
+
+#gall1{
+    width: 100%;
+    height: auto;
+    margin-top: 20px; 
+}
+
+#gall1 li{
+    width: 90%;
+    height: auto;
+    margin: 0 auto 20px auto;
+}
+
+#gall1 a{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#gall1 .tit{
+    font-family: 'Oswald', sans-serif;
+} 
+
+#gall1 img{
+    width: 100%;
+    height: auto;
+}
+
+.tit{
+    font-size: 16px;
+    text-indent: 10px;
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    top: -38px;
+    color: #fff;
+}
+
+.exp{
+    width: 94%;
+    margin: 0 auto;
+    font-size: 13px;
+    /* text-indent: 20px; */
+    display: block;
+    padding: 5px 5px;
+    position: relative;
+    top: -20px;
+}
+
+.btn{
+    position: relative;
+    margin-left: auto;  /* 오른쪽으로 */
+    width: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn>span{
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.good{
+    color: olivedrab;
+}
+
+.good.red{
+    color: red;
+}
+
+ #show2, #show3, #show4, #show5{
+    position: relative;
+    display: none;
+}
+
+.videos{
+    width: 80px;
+    height: 30px;
+    margin: 50px auto;
+}
+
+#choice, .showpic{
+    width: 90%;
+    height: auto;
+    margin: 20px auto 0 auto;
+}
+
+.showpic{
+    width: 100%;
+    height: auto;
+}
+
+.selbox{
+    font-family: 'Oswald', sans-serif;
+    -ms-progress-appearance: none;
+    -webkit-appearance: none;
+    background: url("../images/down-arrow.png") no-repeat 98% 50% / 15px 15px;
+}
+
+.selbox::-ms-expand{
+    display:none;
+}
+
+select{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.showpic{
+    position: relative;
+    top: -10px;    
+}
+
+.inside{
+    width: 80px;
+    height: 30px;
+    margin: 50px auto;
+    position: relative;
+    left: 8px;
+}
+
+#sumImg{
+    width: 90%;
+    height: auto;
+    margin: 40px auto 0 auto;
+}
+
+.sum1, .sum2, .sum3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom : 30px;
+    border: 1px solid #000;
+}
+
+#sumImg img{
+    display: block;
+    width: 40%;
+    height: 150px;
+}
+
+
+#sumImg p{
+    width: 60%;
+    height: auto;
+}
+
+.title{
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-indent: 8px;
+    position: relative;
+    top: -8px;
+    /* border: 1px solid hotpink; */
+}
+
+.exp1{
+    display: block;
+    font-size: 12px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 6px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.exp1 a{
+    display: block;
+    width: 30px;
+    height: 20px;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-left: auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    padding: 5px 5px;
+}
+
+.exp1 a:hover{
+    color: goldenrod;
+}
+
+.sumspan{
+    display: block;
+    width: 90%;
+    height: auto;
+    line-height: 1.3;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: -1px;
+    left: 10px;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background: black;
+}
+
+#fnav>ul>li>a{
+    position: relative;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px 0;
+    text-align: center;
+}
+
+/* #fnav>ul>li>a:after{
+    content:"▼";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+} */
+
+.fdepth2 adress, .knum, .cry{
+    display: block;
+    width: 200px;
+    font-style: normal;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 0;
+    margin-left: 20px;
+}
+
+.fdepth2 li{
+    color: rgb(26, 26, 26);
+    padding: 10px 0;
+}
+
+.fdepth2{
+    display: none;
+}
+
+.flogo{
+    width: 100%;
+    height: 120px;
+    background: black;
+}
+
+.flogo>a{
+    display: block;
+    position: relative;
+    width: 114px;
+    height: 30px;
+    background: url("../images/logo.png") no-repeat;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.conts{
+    display: none;
+}
